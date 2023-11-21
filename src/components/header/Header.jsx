@@ -34,7 +34,7 @@ const Header = ({ setLanguage, language }) => {
   }, []);
   return (
     <div
-      className={` fixed z-[100] justify-between px-5 md:px-0 items-center md:gap-x-64 font-bold top-0 text-[1.3rem] flex flex-row md:justify-center h-[6rem] w-full py-[1rem] text-white ${
+      className={` fixed  justify-between z-[100] px-5 md:px-0 items-center md:gap-x-64 font-bold top-0 text-[1.3rem] flex flex-row md:justify-center h-[6rem] w-full py-[1rem] text-white ${
         bgShow ? "navBar" : ""
       }`}
     >
