@@ -1,0 +1,43 @@
+.shadow-custom::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.shadow-custom::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: white;
+}
+.shadow-custom::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ffff;
+}
+.shadow-custom:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ffff;
+  opacity: 1;
+}
+.shadow-custom::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ffff;
+  opacity: 1;
+}
+.shadow-custom:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffff;
+}
+.shadow-custom::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ffff;
+}
+
+.shadow-custom::placeholder {
+  /* Most modern browsers support this now. */
+  color: #ffff;
+}
+
+.shadow-custom-form {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.rtl-text {
+  direction: rtl;
+}

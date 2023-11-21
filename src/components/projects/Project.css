@@ -1,0 +1,37 @@
+.project {
+  position: absolute;
+  left: -220px;
+  top: -160px;
+  width: 0;
+  height: 0;
+  border-left: 1409px solid transparent;
+  border-right: 1409px solid transparent;
+  border-bottom: 950px solid var(--projectBg);
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--primary);
+  color: var(--primary);
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: var(--primary);
+  width: 20px;
+  height: 20px;
+}
+.swiper-pagination-bullets {
+  margin-right: 40px;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: start;
+}
+.shadow-custom {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.rtl-text {
+  direction: rtl;
+}
+.shadow-txt {
+  text-shadow: 5px 4px 2px var(--primary);
+}

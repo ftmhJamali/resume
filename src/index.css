@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --primary: #8739fa;
+  --projectBg: #ffffff;
+  --header-text: #151418;
+  --midGray: rgb(147, 147, 151);
+  --gray-platte: #d5d4d1;
+  --blue-platte: #76b8e4;
+  --pink-platte: #eb96bb;
+}
+[data-theme="dark"] {
+  --projectBg: #1d1c21;
+  --header-text: #ffffff;
+  --midGray: rgb(147, 147, 151);
+  --gray-platte: #d5d4d1;
+  --blue-platte: #76b8e4;
+  --pink-platte: #eb96bb;
+}
+[platte-theme="blue"] {
+  --primary: #76b8e4;
+}
+[platte-theme="pink"] {
+  --primary: #eb96bb;
+}
+[platte-theme="gray"] {
+  --primary: #7b7b7b;
+}
+@font-face {
+  font-family: "blink";
+  src: url("./assets/Fonts/Blink.otf") format("otf")
+    url("./assets/Fonts//Blink3D.otf") format("otf");
+}
+@font-face {
+  font-family: "cantarell";
+  src: url("./assets/Fonts/Cantarell-Bold.ttf") format("ttf")
+    url("./assets/Fonts/Cantarell-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "oxygen";
+  src: url("./assets/Fonts/Oxygen-Regular.ttf") format("ttf")
+    url("./assets/Fonts/Oxygen-Bold.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/Fonts/Poppins-Medium.ttf") format("ttf")
+    url("./assets/Fonts/Poppins-Bold.ttf") format("ttf")
+    url("./assets/Fonts/Poppins-Italic.ttf") format("ttf")
+    url("./assets/Fonts/Poppins-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "segoeUi";
+  src: url("./assets/Fonts/Segoe\ UI.ttf") format("ttf");
+}
