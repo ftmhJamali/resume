@@ -16,8 +16,8 @@ const About = ({ setLanguage, language }) => {
             {language === "English" ? (
               <span className="typing-demo">Hi , I'm Fatemeh</span>
             ) : (
-              <span className="typing-demo-per md:me-3  rtl-text">
-                سلام، من فاطمه هستم
+              <span className="typing-demo-per md:me-3 text-[28px] md:text-base rtl-text">
+                سلام ، من فاطمه هستم
               </span>
             )}
           </h1>
