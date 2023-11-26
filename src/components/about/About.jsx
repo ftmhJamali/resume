@@ -32,7 +32,8 @@ const About = ({ setLanguage, language }) => {
           </h2>
 
           {language === "English" ? (
-            <p className="text-xs ms-6 ltr-text md:ms-0 md:text-base w-[336px] md:w-full flex justify-center  md:justify-start">
+            <>
+            <p className="text-xs ms-6 ltr-text md:ms-0 md:text-base w-[336px] md:w-full hidden md:flex justify-center  md:justify-start">
               I was born in 2000 in Tehran and I have bachelor's degree <br />
               in computer engineering from South Tehran Azad University in 2022{" "}
               <br />
@@ -42,6 +43,16 @@ const About = ({ setLanguage, language }) => {
               <br />I develop exceptional websites and web apps that provide
               intuitive.
             </p>
+            <p className="text-xs ms-6 ltr-text md:ms-0 md:text-base w-[336px] md:w-full  md:hidden flex justify-center  md:justify-start">
+              I was born in 2000 in Tehran and I have bachelor's degree 
+              in<br /> computer engineering from South Tehran Azad University in <br /> 2022
+              
+              and I have the certificate of front end course from Sematec 
+              Institute in 2021 . I enjoy building things that live on the
+              internet .
+              I develop exceptional websites and web apps that provide
+              intuitive.
+            </p></>
           ) : (
             <p className="text-xs rtl-text me-5 md:mx-0 md:text-base w-[336px] md:w-full flex justify-center  md:justify-start">
               من متولد سال ۱۳۷۹ در تهران هستم . دارای مدرک مهندسی نرم افزار{" "}
