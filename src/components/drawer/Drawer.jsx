@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Drawer.css";
 import Language from "../language/Language";
 const Drawer = ({ isOpen, setLanguage, language }) => {
-  const [platte, setPlatte] = useState("primary"),
+  const [platte, setPlatte] = useState(""),
     setDarkMode = () => {
       document.querySelector("body").setAttribute("data-theme", "dark");
     },

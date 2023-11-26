@@ -26,7 +26,7 @@
   font-family: monospace;
 }
 .typing-demo-per {
-  width: 16ch;
+  width: 15ch;
   animation: typing 2s steps(23), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
