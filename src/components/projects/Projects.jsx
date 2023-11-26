@@ -177,7 +177,7 @@ const Projects = ({ setLanguage, language }) => {
                     )}
                   </p>
                   <div className="flex gap-x-3 my-6 text-sm">
-                    <div className="w-14 bg-midGray flex justify-center rounded-2xl text-white">
+                    <div className="w-14 bg-midGray flex items-center justify-center rounded-2xl text-white">
                       React
                     </div>
                     <div className="w-12 items-center pb-1 bg-midGray flex justify-center rounded-2xl text-white ">

@@ -23,7 +23,7 @@ const About = ({ setLanguage, language }) => {
           </h1>
           <h2 className="w-full flex justify-center  md:justify-start  text-midGray text-[1.9rem]">
             {language === "English" ? (
-              <span> Frontend Developer</span>
+              <span className="mb-2"> Frontend Developer</span>
             ) : (
               <span className="rtl-text md:me-14 text-[14px] mb-2">
                 توسعه دهنده ی فرانت اند
@@ -43,7 +43,7 @@ const About = ({ setLanguage, language }) => {
               <br />I develop exceptional websites and web apps that provide
               intuitive.
             </p>
-            <p className="text-xs ms-6 ltr-text md:ms-0 md:text-base w-[336px] md:w-full  md:hidden flex justify-center  md:justify-start">
+            <p className="text-xs ms-6 ltr-text  md:text-base w-[336px] md:hidden flex justify-center  md:justify-start">
               I was born in 2000 in Tehran and I have bachelor's degree 
               in<br /> computer engineering from South Tehran Azad University in <br /> 2022
               
