@@ -274,43 +274,43 @@ const Projects = ({ setLanguage, language }) => {
           <div className="w-[310px] md:hidden ">
             <Swiper modules={[Autoplay]} slidesPerView={4} autoplay={true}>
               <SwiperSlide>
-                <div className="flex text-xs  w-[70px] justify-center rounded items-center bg-[color:#e34f26] text-white ">
+                <div className="flex  font-bold  text-xs py-1 w-[70px] justify-center rounded items-center bg-[color:#e34f26] text-white ">
                   <SiHtml5 />
                   <p>HTML</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex w-[70px] text-xs  justify-center rounded items-center bg-[color:#1968a0] text-white ">
+                <div className="flex  font-bold  w-[70px] py-1 text-xs  justify-center rounded items-center bg-[color:#1968a0] text-white ">
                   <SiCss3 />
                   <p>Css</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex text-xs w-[73px] justify-center rounded items-center bg-[color:#1968a0] text-white ">
+                <div className="flex font-bold text-xs py-1  w-[73px] justify-center rounded items-center bg-[color:#1968a0] text-white ">
                   <SiTailwindcss className="text-[color:#05b1d2]" />
                   <p>Tailwind</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex  w-20 items-center bg-[color:#7311ec]  text-white justify-center rounded text-xs">
+                <div className="flex  font-bold   w-20 py-1  items-center bg-[color:#7311ec]  text-white justify-center rounded text-xs">
                   <SiBootstrap />
                   <p>Bootstrap</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex w-24 ms-2 items-center gap-x-1 bg-[color:#f7df1e] text-black justify-center rounded text-xs">
+                <div className="flex  font-bold  w-24 ms-2 py-1  items-center gap-x-1 bg-[color:#f7df1e] text-black justify-center rounded text-xs">
                   <SiJavascript />
                   <p>JavaScript</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex  w-16 ms-9 items-center bg-[color:#32363e] text-white  justify-center rounded text-xs">
+                <div className="flex  font-bold  w-16 ms-9 py-1  items-center bg-[color:#32363e] text-white  justify-center rounded text-xs">
                   <SiReact className="text-[color:#55b1cc]" />
                   <p>React</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex w-24 ms-8 px-1 items-center justify-center bg-black rounded text-xs text-white ">
+                <div className="flex font-bold  w-28 ms-8 px-1 py-1  items-center justify-center bg-black rounded text-xs text-white ">
                   <SiNextdotjs />
                   <p className="flex items-center justify-center gap-x-1">
                     Next <span className="text-xs">(learning)</span>
@@ -318,19 +318,19 @@ const Projects = ({ setLanguage, language }) => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-14 w-14 text-xs gap-x-1 items-center bg-[color:#c2312e] text-white justify-center rounded">
+                <div className="flex ms-[76px] py-1 font-bold w-14 text-xs gap-x-1 items-center bg-[color:#c2312e] text-white justify-center rounded">
                   <SiNpm />
                   <p>Npm</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-11 w-12 text-xs items-center bg-[color:#f05032] text-white px-1 justify-center rounded">
+                <div className="flex ms-16 py-1 font-bold  w-12 text-xs items-center bg-[color:#f05032] text-white px-1 justify-center rounded">
                   <SiGit />
                   <p>Git</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-6 me-12 w-16 items-center  bg-[color:#181717] text-white text-xs justify-center rounded">
+                <div className="flex py-1 font-bold ms-11 me-12 w-16 items-center  bg-[color:#181717] text-white text-xs justify-center rounded">
                   <SiGithub />
                   <p>Github</p>
                 </div>

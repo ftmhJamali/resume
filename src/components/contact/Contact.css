@@ -31,7 +31,7 @@
 
 .shadow-custom::placeholder {
   /* Most modern browsers support this now. */
-  color: #ffff;
+  color: var(--projectBg);
 }
 
 .shadow-custom-form {

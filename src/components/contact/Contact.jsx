@@ -36,7 +36,7 @@ const Contact = ({ setLanguage, language }) => {
           language === "English" ? null : "rtl-text"
         } gap-y-4 p-3 w-72 h-[370px] mt-12 md:w-[600px] md:h-[300px] bg-primary rounded-lg shadow-custom-form`}
       >
-        <h2 className="text-lg text-white font-semibold md:ms-6">
+        <h2 className="text-lg text-projectBg font-semibold md:ms-6">
           {language === "English" ? (
             <span>Contact with me</span>
           ) : (
@@ -47,19 +47,19 @@ const Contact = ({ setLanguage, language }) => {
           <input
             placeholder={language === "English" ? "name ..." : "نام ..."}
             name="user_name"
-            className="md:w-40 p-2 bg-transparent border-2 text-white border-solid border-white focus:outline-none rounded-md shadow-custom"
+            className="md:w-40 p-2 bg-transparent border-2 text-projectBg border-solid border-projectBg focus:outline-none rounded-md shadow-custom"
             type="text"
           />
           <input
             placeholder={language === "English" ? "email ..." : "ایمیل ..."}
             name="user_email"
-            className="md:w-40 p-2 bg-transparent border-2 text-white border-solid border-white focus:outline-none rounded-md shadow-custom"
+            className="md:w-40 p-2 bg-transparent border-2 text-projectBg border-solid border-projectBg focus:outline-none rounded-md shadow-custom"
             type="email"
           />
           <input
             placeholder={language === "English" ? "subject ..." : "موضوع ..."}
             name="subject"
-            className="md:w-40 p-2 bg-transparent border-2 text-white border-solid border-white focus:outline-none rounded-md shadow-custom"
+            className="md:w-40 p-2 bg-transparent border-2 text-projectBg border-solid border-projectBg focus:outline-none rounded-md shadow-custom"
             type="text"
           />
         </div>
@@ -69,12 +69,12 @@ const Contact = ({ setLanguage, language }) => {
             placeholder={
               language === "English" ? "your message ..." : "پیام شما ..."
             }
-            className="resize-none w-full md:w-[342px]  md:h-full md:ms-6 p-2 bg-transparent border-2 text-white border-solid border-white focus:outline-none rounded-md shadow-custom"
+            className="resize-none w-full md:w-[342px]  md:h-full md:ms-6 p-2 bg-transparent border-2 text-projectBg border-solid border-projectBg focus:outline-none rounded-md shadow-custom"
             type="text"
           />
           <button
             type="submit "
-            className="flex group px-6 py-1 border-2 border-solid border-white text-white justify-center items-center  bg-transparent font-semibold hover:tracking-widest rounded-lg hover:bg-white hover:text-primary transition-all"
+            className="flex group px-6 py-1 border-2 border-solid border-projectBg text-projectBg justify-center items-center  bg-transparent font-semibold hover:tracking-widest rounded-lg hover:bg-projectBg hover:text-primary transition-all"
           >
             {language === "English" ? <span>send</span> : <span>ارسال</span>}
             <LuMessagesSquare className="hidden group-hover:block transition-all animate-ping" />
