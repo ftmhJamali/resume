@@ -41,8 +41,8 @@ const Header = ({ setLanguage, language }) => {
       <a className="flex cursor-pointer">
         <div className="z-40 hidden md:block">frontend</div>
         <div className="relative flex items-center">
-          <p className="z-40 ps-[1.3px]">ftmh</p>
-          <div className="bg-primary w-[46px] h-[46px] rounded-2xl left-[2px] mt-1 rotate-45 absolute"></div>
+          <p className="z-40 ps-[1.3px] ">ftmh</p>
+          <div className="bg-primary w-[46px] h-[46px] rounded-2xl md:left-[2px] left-[0.5px] mt-1 rotate-45 absolute"></div>
         </div>
       </a>
       <div className="flex gap-x-6 items-center">
