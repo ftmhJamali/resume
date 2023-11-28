@@ -8,5 +8,5 @@ body::-webkit-scrollbar-thumb {
 }
 body {
   background-color: #151418;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
