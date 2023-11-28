@@ -34,12 +34,12 @@ const Header = ({ setLanguage, language }) => {
   }, []);
   return (
     <div
-      className={` fixed  justify-between z-[100] px-5 md:px-0 items-center md:gap-x-64 font-bold top-0 text-[1.3rem] flex flex-row md:justify-center h-[6rem] w-full py-[1rem] text-white ${
+      className={` fixed  justify-between sm:px-12 z-[100] px-7  items-center md:gap-x-64 font-bold top-0 text-[1.3rem] flex flex-row md:justify-center h-[6rem] w-full py-[1rem] text-white ${
         bgShow ? "navBar" : ""
       }`}
     >
       <a className="flex cursor-pointer">
-        <div className="z-40 hidden md:block">frontend</div>
+        <div className="z-40 front">frontend</div>
         <div className="relative flex items-center">
           <p className="z-40 ps-[1.3px] ">ftmh</p>
           <div className="bg-primary w-[46px] h-[46px] rounded-2xl md:left-[2px] left-[0.5px] mt-1 rotate-45 absolute"></div>

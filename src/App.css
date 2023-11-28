@@ -1,4 +1,3 @@
-
 body::-webkit-scrollbar {
   background-color: #151418;
   width: 6px;
@@ -6,4 +5,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: var(--primary);
   border-radius: 50px;
+}
+body {
+  background-color: #151418;
+  overflow-x: hidden;
 }

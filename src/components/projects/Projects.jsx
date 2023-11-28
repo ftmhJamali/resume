@@ -26,13 +26,13 @@ const Projects = ({ setLanguage, language }) => {
     AOS.init();
   }, []);
   return (
-    <div className="relative  md:pt-64 h-[1790px] overflow-hidden w-full ">
-      <div className="absolute z-40 w-[2700px]  h-[2700px] -left-48  rounded-[770px] rotate-45 bg-projectBg"></div>
-      <div className="absolute z-[60] w-full  flex flex-col gap-y-16 left-9 md:left-[360px] top-64 md:top-48 ">
+    <div className="relative  md:pt-64 h-[1660px]  w-screen overflow-hidden">
+      <div className="absolute z-40 w-[2700px]  h-[2700px] -left-48 rounded-[1200px] sm:rounded-[1200px]  md:rounded-[770px] rotate-45 bg-projectBg"></div>
+      <div className="z-[60] w-full  mt-20 flex flex-col gap-y-16  top-64 md:top-48 ">
         <h2
           data-aos="fade-up"
           data-aos-duration="800"
-          className="text-white text-3xl"
+          className="text-white md:ms-56 mt-36 md:mt-0 ms-7 text-3xl w-40"
         >
           {language === "English" ? (
             <span>Projects</span>
@@ -40,7 +40,7 @@ const Projects = ({ setLanguage, language }) => {
             <span>پروژه ها</span>
           )}
         </h2>
-        <div data-aos="fade-up" className="z-[70] md:w-[868px]">
+        <div className="z-[70] md:ms-56 ms-10 md:w-[868px]">
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
@@ -49,7 +49,7 @@ const Projects = ({ setLanguage, language }) => {
             slidesPerView={1}
           >
             <SwiperSlide>
-              <div className="flex flex-col gap-x-28 gap-y-5 w-full h-[430px] md:h-64 md:flex-row">
+              <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
                 <img
                   className="rounded-xl shadow-lg w-[300px] md:w-[350px] h-[196px]"
                   src="https://i.postimg.cc/LXJNtdK6/morent.png"
@@ -76,30 +76,32 @@ const Projects = ({ setLanguage, language }) => {
                       </span>
                     )}
                   </p>
-                  <div className="flex gap-x-3 my-6 text-sm">
-                    <div className="w-14 bg-midGray flex justify-center rounded-2xl text-white">
-                      React
+                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
+                    <div className="flex gap-x-3  text-sm">
+                      <div className="w-14 bg-midGray h-[22px] items-center flex justify-center rounded-2xl text-white">
+                        React
+                      </div>
+                      <div className="w-16 bg-midGray h-[22px] flex justify-center rounded-2xl text-white ">
+                        Tailwind
+                      </div>
                     </div>
-                    <div className="w-16 bg-midGray flex justify-center rounded-2xl text-white ">
-                      Tailwind
-                    </div>
+                    <button className="bg-primary ms-8 sm:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1">
+                      <p className="">
+                        {language === "English" ? (
+                          <span>Demo</span>
+                        ) : (
+                          <span className="rtl-text">نمایش</span>
+                        )}
+                      </p>
+                      <LuArrowRight className="mt-[5.5px]" />
+                    </button>
                   </div>
-                  <button className="bg-primary font-semibold w-20 h-8 rounded-md flex justify-center text-white mt-3 items-center gap-x-1">
-                    <p className="">
-                      {language === "English" ? (
-                        <span>Demo</span>
-                      ) : (
-                        <span className="rtl-text">نمایش</span>
-                      )}
-                    </p>
-                    <LuArrowRight className="mt-[5.5px]" />
-                  </button>
                 </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="flex flex-col gap-x-28 gap-y-5 w-full md:flex-row">
+              <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full ">
                 <img
                   className="rounded-xl shadow-lg w-[300px] md:w-[350px] h-[196px]"
                   src="https://i.postimg.cc/FK9yxMcX/tarkhineh.png"
@@ -127,29 +129,32 @@ const Projects = ({ setLanguage, language }) => {
                       </span>
                     )}
                   </p>
-                  <div className="flex gap-x-3 my-6 text-sm">
-                    <div className="w-14 bg-midGray flex justify-center rounded-2xl text-white">
-                      React
+                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
+                    <div className="flex gap-x-3  text-sm">
+                      <div className="w-14 bg-midGray h-[22px] items-center flex justify-center rounded-2xl text-white">
+                        React
+                      </div>
+                      <div className="w-16 bg-midGray h-[22px] flex justify-center rounded-2xl text-white ">
+                        Tailwind
+                      </div>
                     </div>
-                    <div className="w-16 bg-midGray flex justify-center rounded-2xl text-white ">
-                      Tailwind
-                    </div>
+                    <button className="bg-primary ms-7 sm:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1">
+                      <p className="">
+                        {language === "English" ? (
+                          <span>Demo</span>
+                        ) : (
+                          <span className="rtl-text">نمایش</span>
+                        )}
+                      </p>
+                      <LuArrowRight className="mt-[5.5px]" />
+                    </button>
                   </div>
-                  <button className="bg-primary font-semibold w-20 h-8 rounded-md flex justify-center text-white mt-3 items-center gap-x-1">
-                    {language === "English" ? (
-                      <span>Demo</span>
-                    ) : (
-                      <span className="rtl-text">نمایش</span>
-                    )}
-
-                    <LuArrowRight className="mt-[5.5px]" />
-                  </button>
                 </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="flex flex-col gap-x-28 gap-y-5 w-full md:flex-row">
+              <div className="flex flex-col sm:flex-row md:flex-col xl:gap-x-32 lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 gap-y-3 w-full ">
                 <img
                   className="rounded-xl shadow-lg w-[300px] md:w-[350px] h-[196px]"
                   src="https://i.postimg.cc/gcMTLKC0/hotelix.png"
@@ -166,8 +171,8 @@ const Projects = ({ setLanguage, language }) => {
                   <p className="text-midGray">
                     {language === "English" ? (
                       <span>
-                        Check and book the hotel using the map <br /> search and
-                        filter
+                        Check and book the hotel using <br />
+                        the map search and filter
                       </span>
                     ) : (
                       <span className="rtl-text">
@@ -176,36 +181,43 @@ const Projects = ({ setLanguage, language }) => {
                       </span>
                     )}
                   </p>
-                  <div className="flex gap-x-3 my-6 text-sm">
-                    <div className="w-14 bg-midGray flex items-center justify-center rounded-2xl text-white">
-                      React
+                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
+                    <div className="flex gap-x-3  text-sm">
+                      <div className="w-14 bg-midGray h-[22px] items-center flex justify-center rounded-2xl text-white">
+                        React
+                      </div>
+                      <div className="w-16 bg-midGray h-[22px] flex justify-center rounded-2xl text-white ">
+                        css
+                      </div>
                     </div>
-                    <div className="w-12 items-center pb-1 bg-midGray flex justify-center rounded-2xl text-white ">
-                      css
-                    </div>
+                    <button className="bg-primary ms-8  sm:ms-0 md:ms-0 lg:ms-0 xl:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1">
+                      <p className="">
+                        {language === "English" ? (
+                          <span>Demo</span>
+                        ) : (
+                          <span className="rtl-text">نمایش</span>
+                        )}
+                      </p>
+                      <LuArrowRight className="mt-[5.5px]" />
+                    </button>
                   </div>
-                  <button className="bg-primary font-semibold w-20 h-8 rounded-md flex justify-center text-white mt-3 items-center gap-x-1">
-                    {language === "English" ? (
-                      <span>Demo</span>
-                    ) : (
-                      <span className="rtl-text">نمایش</span>
-                    )}
-                    <LuArrowRight className="mt-[5.5px]" />
-                  </button>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="mt-6 md:mt-20 flex flex-col gap-y-16">
-          <h2 data-aos="fade-up" className="text-3xl text-header">
+        <div className="mt-6 md:mt-20 flex flex-col gap-y-16 z-50 ms-7 md:ms-56">
+          <h2 data-aos="fade-up" className="text-3xl w-40 text-header ">
             {language === "English" ? (
               <span>Skills</span>
             ) : (
               <span>مهارت ها</span>
             )}
           </h2>
-          <div data-aos="fade-up" className="w-[800px]  hidden md:block">
+          <div
+            data-aos="fade-up"
+            className="w-[768px]  hidden md:block lg:ms-28"
+          >
             <Swiper modules={[Autoplay]} autoplay={true} slidesPerView={7}>
               <SwiperSlide>
                 <div className="flex  items-center bg-[color:#e34f26] text-white px-2 justify-center rounded-sm">
@@ -271,7 +283,7 @@ const Projects = ({ setLanguage, language }) => {
               <SwiperSlide></SwiperSlide>
             </Swiper>
           </div>
-          <div className="w-[310px] md:hidden ">
+          <div className="w-[310px] md:hidden ms-5 sm:ms-48 ">
             <Swiper modules={[Autoplay]} slidesPerView={4} autoplay={true}>
               <SwiperSlide>
                 <div className="flex  font-bold  text-xs py-1 w-[70px] justify-center rounded items-center bg-[color:#e34f26] text-white ">

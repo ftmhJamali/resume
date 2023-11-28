@@ -15,11 +15,13 @@
 }
 .swiper-pagination-clickable .swiper-pagination-bullet {
   background-color: var(--primary);
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
 }
 .swiper-pagination-bullets {
   margin-right: 40px;
+  margin-top: 10px;
 }
 .swiper-pagination {
   display: flex;
@@ -34,4 +36,16 @@
 }
 .shadow-txt {
   text-shadow: 5px 4px 2px var(--primary);
+}
+.bg-prj {
+}
+@media (min-width: 640px) {
+  .bg-prj {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .bg-prj {
+    width: 1200px;
+  }
 }
