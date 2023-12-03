@@ -14,7 +14,7 @@ const About = ({ setLanguage, language }) => {
         <div className="flex gap-y-1 flex-col ">
           <h1 className="wrapper w-full sm:text-[29px] md:text-[30px] lg:text-[35px] flex justify-center sm:ms-6  md:justify-start text-[2rem] ">
             {language === "English" ? (
-              <span className="typing-demo">Hi , I'm Fatemeh</span>
+              <span className="typing-demo ms-2 md:ms-0">Hi , I'm Fatemeh</span>
             ) : (
               <span className="typing-demo-per md:me-3   rtl-text">
                 سلام ، من فاطمه هستم
