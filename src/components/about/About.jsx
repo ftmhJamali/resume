@@ -43,7 +43,7 @@ const About = ({ setLanguage, language }) => {
                 <br /> websites and web applications that offer intuitive user
                 experiences.
               </p>
-              <p className="text-xs ms-3 ltr-text sm:text-[12px]  md:text-base w-[336px] md:hidden flex justify-center  md:justify-start">
+              <p className="text-xs ms-8 ltr-text sm:text-[12px]  md:text-base w-[336px] md:hidden flex justify-center  md:justify-start">
                 I was born in Tehran in 2000. In 2022, I obtained a bachelor's
                 degree in Computer Engineering from South Tehran Azad
                 University. Additionally, in 2021, I completed a front-end

@@ -52,5 +52,5 @@
   direction: rtl;
 }
 .cst-shadow {
-  filter: drop-shadow(7px 2px var(--primary));
+  filter: drop-shadow(6px 2px var(--primary));
 }
