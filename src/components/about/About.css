@@ -51,3 +51,6 @@
 .rtl-text {
   direction: rtl;
 }
+.cst-shadow {
+  filter: drop-shadow(7px 2px var(--primary));
+}

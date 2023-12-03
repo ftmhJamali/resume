@@ -70,7 +70,7 @@ const About = ({ setLanguage, language }) => {
           className="w-full flex justify-center"
         >
           <img
-            className="w-[180px] md:w-72 sm:ms-32 md:ms-20 md:pt-5 "
+            className="w-[180px] cst-shadow md:w-72 sm:ms-32 md:ms-20 md:pt-5 "
             src="https://i.postimg.cc/y8fmvfTJ/fjIcon.png"
             alt=""
           />
