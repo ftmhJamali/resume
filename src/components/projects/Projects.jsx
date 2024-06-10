@@ -40,7 +40,7 @@ const Projects = ({ setLanguage, language }) => {
             <span>پروژه ها</span>
           )}
         </h2>
-        <div className="z-[70] md:ms-56 ms-10 md:w-[868px]">
+        <div className="z-[70] md:ms-56 h-[500px] ms-10 md:w-[868px] md:h-[300px]">
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
@@ -48,6 +48,188 @@ const Projects = ({ setLanguage, language }) => {
             spaceBetween={50}
             slidesPerView={1}
           >
+            <SwiperSlide className="h-full">
+              <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
+                <img
+                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[246px]"
+                  src="https://i.postimg.cc/76bQ6wRx/versalico-img.png"
+                  alt=""
+                />
+                <div className="flex flex-col items-center w-[320px] md:w-full md:items-start gap-3 ">
+                  <h2 className="text-header text-xl font-semibold">
+                    {language === "English" ? (
+                      <span className="shadow-txt">versaliko shop </span>
+                    ) : (
+                      <span className="rtl-text shadow-txt">
+                        {" "}
+                        فروشگاه ورسالیکو
+                      </span>
+                    )}
+                  </h2>
+                  <p
+                    className={`text-midGray text-center pt-3 ${
+                      language === "English" ? "md:text-left" : "md:text-right"
+                    }`}
+                  >
+                    {language === "English" ? (
+                      <span>
+                        A web application for buying clothes and accessories
+                        related to style . Prepared in the code mavericks
+                        programming group
+                      </span>
+                    ) : (
+                      <span className="rtl-text w-full 	text-right">
+                        یک اپلیکیشن تحت وب برای خرید لباس <br />و اکـســسوری های
+                        مـرتـبط با اسـتــایل <br /> تهــیه شـده در گـروه
+                        برنــامه نویــســی <br />
+                        کد ماوریکس
+                      </span>
+                    )}
+                  </p>
+                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
+                    <div className="flex gap-x-3  text-sm">
+                      <div className="w-14 bg-midGray h-[22px] items-center flex justify-center rounded-2xl text-white">
+                        Next
+                      </div>
+                      <div className="w-16 bg-midGray h-[22px] flex justify-center rounded-2xl text-white ">
+                        css
+                      </div>
+                    </div>
+                    <a
+                      href="https://www.versalikoshop.com/"
+                      className="bg-primary ms-8 sm:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1"
+                    >
+                      <p className="">
+                        {language === "English" ? (
+                          <span>Demo</span>
+                        ) : (
+                          <span className="rtl-text">نمایش</span>
+                        )}
+                      </p>
+                      <LuArrowRight className="mt-[5.5px]" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="h-full">
+              <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
+                <img
+                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[246px]"
+                  src="https://i.postimg.cc/sfnQXHKw/tamehsk.png"
+                  alt=""
+                />
+                <div className="flex flex-col items-center w-[320px] md:w-full md:items-start gap-3 ">
+                  <h2 className="text-header text-xl font-semibold">
+                    {language === "English" ? (
+                      <span className="shadow-txt">tameshk shop </span>
+                    ) : (
+                      <span className="rtl-text shadow-txt">فروشگاه تمشک</span>
+                    )}
+                  </h2>
+                  <p
+                    className={`text-midGray text-center pt-3 ${
+                      language === "English" ? "md:text-left" : "md:text-right"
+                    }`}
+                  >
+                    {language === "English" ? (
+                      <span>A web application for buying toys</span>
+                    ) : (
+                      <span className="rtl-text w-full 	text-right">
+                        یک اپلیکیشن تحت وب برای خرید اسباب بازی
+                      </span>
+                    )}
+                  </p>
+                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
+                    <div className="flex gap-x-3  text-sm">
+                      <div className="w-14 bg-midGray h-[22px] items-center flex justify-center rounded-2xl text-white">
+                        Next
+                      </div>
+                      <div className="w-16 bg-midGray h-[22px] flex justify-center rounded-2xl text-white ">
+                        css
+                      </div>
+                    </div>
+                    <a
+                      href="https://tameshk-final-v3.elysiumprogramming.com/"
+                      className="bg-primary ms-8 sm:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1"
+                    >
+                      <p className="">
+                        {language === "English" ? (
+                          <span>Demo</span>
+                        ) : (
+                          <span className="rtl-text">نمایش</span>
+                        )}
+                      </p>
+                      <LuArrowRight className="mt-[5.5px]" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide className="h-full">
+              <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
+                <img
+                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[246px]"
+                  src="https://i.postimg.cc/sD4VxMVy/abromoj.png"
+                  alt=""
+                />
+                <div className="flex flex-col items-center w-[320px] md:w-full md:items-start gap-3 ">
+                  <h2 className="text-header text-xl font-semibold">
+                    {language === "English" ? (
+                      <span className="shadow-txt">
+                        abro moj travel agency{" "}
+                      </span>
+                    ) : (
+                      <span className="rtl-text shadow-txt">
+                        آژانس مسافرتی ابر و موج
+                      </span>
+                    )}
+                  </h2>
+                  <p
+                    className={`text-midGray text-center pt-3 ${
+                      language === "English" ? "md:text-left" : "md:text-right"
+                    }`}
+                  >
+                    {language === "English" ? (
+                      <span>
+                        A web application for buying tickets, with various
+                        features
+                      </span>
+                    ) : (
+                      <span className="rtl-text w-full 	text-right">
+                        یک اپلیکیشن تحت وب برای خرید بلیط سفر
+                      </span>
+                    )}
+                  </p>
+                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
+                    <div className="flex gap-x-3  text-sm">
+                      <div className="w-24  bg-midGray h-[27px] items-center flex justify-center rounded-2xl text-white">
+                        javaScript
+                      </div>
+                      <div className="w-16 items-center bg-midGray h-[26px] flex justify-center rounded-2xl text-white ">
+                        css
+                      </div>
+                    </div>
+                    <a
+                      href="https://abromoj-final-v9.9.elysiumprogramming.com/"
+                      className="bg-primary ms-8 sm:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1"
+                    >
+                      <p className="">
+                        {language === "English" ? (
+                          <span>Demo</span>
+                        ) : (
+                          <span className="rtl-text">نمایش</span>
+                        )}
+                      </p>
+                      <LuArrowRight className="mt-[5.5px]" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
             <SwiperSlide>
               <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
                 <img
@@ -255,27 +437,27 @@ const Projects = ({ setLanguage, language }) => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex w-36 ms-14 items-center justify-center bg-black rounded-sm text-white px-2">
+                <div className="flex w-28 ms-12 items-center justify-center bg-black rounded-sm text-white px-2">
                   <SiNextdotjs />
                   <p className="flex items-center justify-center gap-x-1">
-                    Next <span className="text-xs">(learning)</span>
+                    Next
                   </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-24 w-24 items-center bg-[color:#c2312e] text-white px-2 justify-center rounded-sm">
+                <div className="flex ms-14 w-24 items-center bg-[color:#c2312e] text-white px-2 justify-center rounded-sm">
                   <SiNpm />
                   <p>Npm</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-[88px] w-16 items-center bg-[color:#f05032] text-white px-2 justify-center rounded-sm">
+                <div className="flex ms-12 w-16 items-center bg-[color:#f05032] text-white px-2 justify-center rounded-sm">
                   <SiGit />
                   <p>Git</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-12 me-12 w-24 items-center  bg-[color:#181717] text-white px-2 justify-center rounded-sm">
+                <div className="flex ms-2 me-12 w-24 items-center  bg-[color:#181717] text-white px-2 justify-center rounded-sm">
                   <SiGithub />
                   <p>Github</p>
                 </div>
@@ -322,27 +504,27 @@ const Projects = ({ setLanguage, language }) => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex font-bold  w-28 ms-8 px-1 py-1  items-center justify-center bg-black rounded text-xs text-white ">
+                <div className="flex font-bold  w-16 ms-7 px-1 py-1  items-center justify-center bg-black rounded text-xs text-white ">
                   <SiNextdotjs />
                   <p className="flex items-center justify-center gap-x-1">
-                    Next <span className="text-xs">(learning)</span>
+                    Next
                   </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-[76px] py-1 font-bold w-14 text-xs gap-x-1 items-center bg-[color:#c2312e] text-white justify-center rounded">
+                <div className="flex ms-5 py-1 font-bold w-14 text-xs gap-x-1 items-center bg-[color:#c2312e] text-white justify-center rounded">
                   <SiNpm />
                   <p>Npm</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-16 py-1 font-bold  w-12 text-xs items-center bg-[color:#f05032] text-white px-1 justify-center rounded">
+                <div className="flex ms-1 py-1 font-bold  w-12 text-xs items-center bg-[color:#f05032] text-white px-1 justify-center rounded">
                   <SiGit />
                   <p>Git</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex py-1 font-bold ms-11 me-12 w-16 items-center  bg-[color:#181717] text-white text-xs justify-center rounded">
+                <div className="flex py-1 font-bold ms-[-19px] me-12 w-20 items-center  bg-[color:#181717] text-white text-xs justify-center rounded">
                   <SiGithub />
                   <p>Github</p>
                 </div>

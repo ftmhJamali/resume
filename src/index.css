@@ -53,3 +53,6 @@
   font-family: "segoeUi";
   src: url("./assets/Fonts/Segoe\ UI.ttf") format("ttf");
 }
+body {
+  overflow-x: hidden !important;
+}

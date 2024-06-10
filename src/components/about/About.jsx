@@ -9,7 +9,7 @@ const About = ({ setLanguage, language }) => {
   }, []);
   //console.log(language);
   return (
-    <section className="z-50 relative pt-44 md:pt-40  w-full flex ps-2 md:ps-0 md:justify-center  text-white">
+    <section className="z-50 relative pt-32 md:pt-40  w-full flex ps-2 md:ps-0 md:justify-center  text-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 sm:ms-16 md:ms-20 items-center gap-y-7 md:gap-y-36 ">
         <div className="flex gap-y-1 flex-col ">
           <h1 className="wrapper w-full sm:text-[29px] md:text-[30px] lg:text-[35px] flex justify-center sm:ms-6  md:justify-start text-[2rem] ">
@@ -37,30 +37,35 @@ const About = ({ setLanguage, language }) => {
                 I was born in Tehran in 2000. In 2022, I obtained a bachelor's
                 degree in <br /> Computer Engineering from South Tehran Azad
                 University. Additionally <br /> in 2021, I completed a front-end
-                course at Sematec Institute and <br /> received a certificate. I
-                am passionate about creating digital projects <br /> that thrive
-                on the internet. My expertise lies in developing outstanding{" "}
-                <br /> websites and web applications that offer intuitive user
-                experiences.
+                course at Sematec Institute and <br /> received a certificate.In
+                addition, I have the experience of working as <br /> a
+                freelancer and in a group. I am passionate about creating
+                digital projects
+                <br /> that thrive on the internet. My expertise lies in
+                developing outstanding <br /> websites and web applications that
+                offer intuitive user experiences.
               </p>
               <p className="text-xs ms-6 ltr-text sm:text-[12px]  md:text-base w-[336px] md:hidden flex justify-center  md:justify-start">
                 I was born in Tehran in 2000. In 2022, I obtained a bachelor's
                 degree in Computer Engineering from South Tehran Azad
                 University. Additionally, in 2021, I completed a front-end
-                course <br /> at Sematec Institute and received a certificate. I
-                am passionate about creating digital projects that thrive on the
-                internet. My expertise lies in developing outstanding websites
-                and web applications that offer intuitive user experiences.
+                course <br /> at Sematec Institute and received a certificate.In
+                addition, I have the experience of working as a freelancer and
+                in <br /> a group. I am passionate about creating digital
+                projects that thrive on the internet. My expertise lies in
+                developing outstanding websites and web applications that offer
+                intuitive user experiences.
               </p>
             </>
           ) : (
-            <p className="text-xs rtl-text me-5 md:mx-0 md:text-base w-[336px] md:w-full flex justify-center  md:justify-start">
+            <p className="text-xs rtl-text me-2 leading-5 md:mx-0 md:text-base w-[336px] md:w-full flex justify-center  md:justify-start">
               من متولد سال ۱۳۷۹ در تهران هستم . دارای مدرک مهندسی نرم افزار{" "}
               <br />
               از دانشگاه آزاد واحد تهران جنوب در سال 1401 و همچنین مدرک <br />
-              دوره ی فرانت اند از موسـسه ی سمـاتک در سال 1400 هستم .من <br />
-              از برنامه نویسـی و ساخت وب اپلیکیشن ها لذت می برم و آماده ی <br />
-              کسب تجربیات جدید هستم.
+              دوره ی فرانت اند از موسـسه ی سمـاتک در سال 1400 هستم .<br />
+              تجربه کار بصورت فریلنسری و گروهی را دارم . من از برنامه نویسـی{" "}
+              <br />و ساخت وب اپلیکیشن ها لذت می برم و آماده ی کسب تجربیات جدید
+              هستم.
             </p>
           )}
         </div>
@@ -70,7 +75,7 @@ const About = ({ setLanguage, language }) => {
           className="w-full flex justify-center"
         >
           <img
-            className="w-[180px] cst-shadow md:w-72 sm:ms-32 md:ms-20 md:pt-5 "
+            className="w-[210px] cst-shadow md:w-72 sm:ms-32 md:ms-20 md:pt-5 "
             src="https://i.postimg.cc/y8fmvfTJ/fjIcon.png"
             alt=""
           />
