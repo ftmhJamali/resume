@@ -44,7 +44,7 @@ const Projects = ({ setLanguage, language }) => {
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
-            autoplay={true}
+            autoplay={{ delay: 5500 }}
             spaceBetween={50}
             slidesPerView={1}
           >
