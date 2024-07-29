@@ -48,7 +48,7 @@ const Projects = ({ setLanguage, language }) => {
             spaceBetween={50}
             slidesPerView={1}
           >
-            <SwiperSlide className="h-full">
+            <SwiperSlide className="SwiperSlide h-full">
               <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
                 <img
                   className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[246px]"
@@ -113,10 +113,71 @@ const Projects = ({ setLanguage, language }) => {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="h-full">
+            <SwiperSlide className="SwiperSlide h-full">
               <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
                 <img
                   className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[246px]"
+                  src="https://i.postimg.cc/sD4VxMVy/abromoj.png"
+                  alt=""
+                />
+                <div className="flex flex-col items-center w-[320px] md:w-full md:items-start gap-3 ">
+                  <h2 className="text-header text-xl font-semibold">
+                    {language === "English" ? (
+                      <span className="shadow-txt">
+                        abro moj travel agency{" "}
+                      </span>
+                    ) : (
+                      <span className="rtl-text shadow-txt">
+                        آژانس مسافرتی ابر و موج
+                      </span>
+                    )}
+                  </h2>
+                  <p
+                    className={`text-midGray text-center pt-3 ${
+                      language === "English" ? "md:text-left" : "md:text-right"
+                    }`}
+                  >
+                    {language === "English" ? (
+                      <span>
+                        A web application for buying tickets, with various
+                        features
+                      </span>
+                    ) : (
+                      <span className="rtl-text w-full 	text-right">
+                        یک اپلیکیشن تحت وب برای خرید بلیط سفر
+                      </span>
+                    )}
+                  </p>
+                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
+                    <div className="flex gap-x-3  text-sm">
+                      <div className="w-24  bg-midGray h-[27px] items-center flex justify-center rounded-2xl text-white">
+                        javaScript
+                      </div>
+                      <div className="w-16 items-center bg-midGray h-[26px] flex justify-center rounded-2xl text-white ">
+                        css
+                      </div>
+                    </div>
+                    <a
+                      href="https://www.abromoj.com/"
+                      className="bg-primary ms-8 sm:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1"
+                    >
+                      <p className="">
+                        {language === "English" ? (
+                          <span>Demo</span>
+                        ) : (
+                          <span className="rtl-text">نمایش</span>
+                        )}
+                      </p>
+                      <LuArrowRight className="mt-[5.5px]" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="SwiperSlide h-full">
+              <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
+                <img
+                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[206px]"
                   src="https://i.postimg.cc/sfnQXHKw/tamehsk.png"
                   alt=""
                 />
@@ -168,72 +229,10 @@ const Projects = ({ setLanguage, language }) => {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide className="h-full">
+            <SwiperSlide className="SwiperSlide h-full">
               <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
                 <img
-                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[246px]"
-                  src="https://i.postimg.cc/sD4VxMVy/abromoj.png"
-                  alt=""
-                />
-                <div className="flex flex-col items-center w-[320px] md:w-full md:items-start gap-3 ">
-                  <h2 className="text-header text-xl font-semibold">
-                    {language === "English" ? (
-                      <span className="shadow-txt">
-                        abro moj travel agency{" "}
-                      </span>
-                    ) : (
-                      <span className="rtl-text shadow-txt">
-                        آژانس مسافرتی ابر و موج
-                      </span>
-                    )}
-                  </h2>
-                  <p
-                    className={`text-midGray text-center pt-3 ${
-                      language === "English" ? "md:text-left" : "md:text-right"
-                    }`}
-                  >
-                    {language === "English" ? (
-                      <span>
-                        A web application for buying tickets, with various
-                        features
-                      </span>
-                    ) : (
-                      <span className="rtl-text w-full 	text-right">
-                        یک اپلیکیشن تحت وب برای خرید بلیط سفر
-                      </span>
-                    )}
-                  </p>
-                  <div className="flex flex-col w-full ms-44 justify-start sm:ms-20 mt-4 md:ms-0 lg:ms-0 xl:ms-0 sm:flex-col md:flex-row lg:flex-col gap-x-32 gap-y-5 md:my-7 ">
-                    <div className="flex gap-x-3  text-sm">
-                      <div className="w-24  bg-midGray h-[27px] items-center flex justify-center rounded-2xl text-white">
-                        javaScript
-                      </div>
-                      <div className="w-16 items-center bg-midGray h-[26px] flex justify-center rounded-2xl text-white ">
-                        css
-                      </div>
-                    </div>
-                    <a
-                      href="https://abromoj-final-v9.9.elysiumprogramming.com/"
-                      className="bg-primary ms-8 sm:ms-0 font-semibold w-20 h-8 rounded-md flex justify-center text-white  items-center gap-x-1"
-                    >
-                      <p className="">
-                        {language === "English" ? (
-                          <span>Demo</span>
-                        ) : (
-                          <span className="rtl-text">نمایش</span>
-                        )}
-                      </p>
-                      <LuArrowRight className="mt-[5.5px]" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="flex flex-col sm:flex-row md:flex-col  lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full h-[430px] md:h-64">
-                <img
-                  className="rounded-xl shadow-lg w-[300px] md:w-[350px] h-[196px]"
+                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[206px]"
                   src="https://i.postimg.cc/LXJNtdK6/morent.png"
                   alt=""
                 />
@@ -282,10 +281,10 @@ const Projects = ({ setLanguage, language }) => {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide>
+            <SwiperSlide className="SwiperSlide h-full">
               <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 xl:gap-x-32 gap-y-3 w-full ">
                 <img
-                  className="rounded-xl shadow-lg w-[300px] md:w-[350px] h-[196px]"
+                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[206px]"
                   src="https://i.postimg.cc/FK9yxMcX/tarkhineh.png"
                   alt=""
                 />
@@ -335,10 +334,10 @@ const Projects = ({ setLanguage, language }) => {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide>
+            <SwiperSlide className="SwiperSlide h-full">
               <div className="flex flex-col sm:flex-row md:flex-col xl:gap-x-32 lg:flex-row sm:gap-x-4 md:gap-x-14 lg:gap-x-10 gap-y-3 w-full ">
                 <img
-                  className="rounded-xl shadow-lg w-[300px] md:w-[350px] h-[196px]"
+                  className="rounded-xl shadow-lg w-[300px] md:w-[390px] h-[206px]"
                   src="https://i.postimg.cc/gcMTLKC0/hotelix.png"
                   alt=""
                 />
@@ -388,7 +387,7 @@ const Projects = ({ setLanguage, language }) => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="mt-6 md:mt-20 flex flex-col gap-y-16 z-50 ms-7 md:ms-56">
+        <div className="mt-6 md:mt-20 flex flex-col gap-y-16 z-50 ms-4 md:ms-56">
           <h2 data-aos="fade-up" className="text-3xl w-40 text-header ">
             {language === "English" ? (
               <span>Skills</span>
@@ -400,8 +399,13 @@ const Projects = ({ setLanguage, language }) => {
             data-aos="fade-up"
             className="w-[768px]  hidden md:block lg:ms-28"
           >
-            <Swiper modules={[Autoplay]} autoplay={true} slidesPerView={7}>
-              <SwiperSlide>
+            <Swiper
+              modules={[Autoplay]}
+              autoplay={true}
+              slidesPerView={5}
+              spaceBetween={30}
+            >
+              {/* <SwiperSlide>
                 <div className="flex  items-center bg-[color:#e34f26] text-white px-2 justify-center rounded-sm">
                   <SiHtml5 />
                   <p>HTMl</p>
@@ -411,55 +415,55 @@ const Projects = ({ setLanguage, language }) => {
                 <div className="flex ms-4  items-center bg-[color:#1968a0] text-white px-2 justify-center rounded-sm">
                   <SiCss3 /> <p>CSS</p>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
-                <div className="flex  md:ms-4 items-center w-[70px] md:w-32 bg-[color:#007ec6] text-white px-2 justify-center rounded-sm">
+                <div className="flex gap-2 md:ms-0 items-center w-[70px] md:w-full md:h-9 bg-[color:#007ec6] text-white px-2 justify-center rounded-md">
                   <SiTailwindcss className="text-[color:#05b1d2]" />
-                  <p>Tailwind</p>
+                  <p className="text-[16px] font-semibold">Tailwind</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex  md:ms-10 w-20 items-center bg-[color:#7311ec] md:w-28 text-white px-2 justify-center rounded-sm">
+                <div className="flex  md:ms-0 gap-2 w-20 items-center bg-[color:#7311ec] md:w-full text-white px-2 justify-center md:h-9 rounded-md">
                   <SiBootstrap />
-                  <p>Bootstrap</p>
+                  <p className="text-[16px] font-semibold">Bootstrap</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex md:ms-12 w-24 md:w-28 items-center gap-x-1 bg-[color:#f7df1e] text-black px-2 justify-center rounded-sm">
+                <div className="flex md:ms-0 w-24 md:w-full md:h-9 items-center gap-2 bg-[color:#f7df1e] text-black px-2 justify-center rounded-md">
                   <SiJavascript />
-                  <p>JavaScript</p>
+                  <p className="text-[16px] font-semibold">JavaScript</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-14 w-24 items-center bg-[color:#32363e] text-white px-2 justify-center rounded-sm">
+                <div className="flex ms-14 md:ms-0 md:h-9 w-24 gap-2 items-center bg-[color:#32363e] md:w-full text-white px-2 justify-center rounded-md">
                   <SiReact className="text-[color:#55b1cc]" />
-                  <p>React</p>
+                  <p className="text-[16px] font-semibold">React</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex w-28 ms-12 items-center justify-center bg-black rounded-sm text-white px-2">
+                <div className="flex w-28 gap-2 ms-12 md:ms-0 md:w-full md:h-9 items-center justify-center bg-black rounded-md text-white px-2">
                   <SiNextdotjs />
-                  <p className="flex items-center justify-center gap-x-1">
+                  <p className="text-[16px] font-semibold flex items-center justify-center gap-x-1">
                     Next
                   </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-14 w-24 items-center bg-[color:#c2312e] text-white px-2 justify-center rounded-sm">
+                <div className="flex ms-14 gap-2 md:ms-0 md:w-full md:h-9 w-24 items-center bg-[color:#c2312e] text-white px-2 justify-center rounded-md">
                   <SiNpm />
-                  <p>Npm</p>
+                  <p className="text-[16px] font-semibold">Npm</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-12 w-16 items-center bg-[color:#f05032] text-white px-2 justify-center rounded-sm">
+                <div className="flex md:ms-0 gap-2 md:w-full md:h-9 ms-12 w-16 items-center bg-[color:#f05032] text-white px-2 justify-center rounded-md">
                   <SiGit />
-                  <p>Git</p>
+                  <p className="text-[16px] font-semibold">Git</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="flex ms-2 me-12 w-24 items-center  bg-[color:#181717] text-white px-2 justify-center rounded-sm">
+                <div className="flex md:ms-0 gap-2 md:w-full md:h-9 ms-2 me-12 w-24 items-center  bg-[color:#181717] text-white px-2 justify-center rounded-md">
                   <SiGithub />
-                  <p>Github</p>
+                  <p className="text-[16px] font-semibold">Github</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide></SwiperSlide>

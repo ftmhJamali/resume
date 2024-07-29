@@ -1,8 +1,8 @@
 .drawer {
-  width: 22vw;
-  height: 100vh !important;
+  width: 26vw;
+  height: 120vh !important;
   background-color: var(--projectBg);
-  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.59);
   position: fixed;
   right: 0;
   color: rgb(65, 64, 64);
@@ -26,7 +26,7 @@
 }
 
 .toggle {
-  font-size: 1rem; /* 👈 change this to scale */
+  font-size: 1rem; 
   border: 0.125em solid currentColor;
   border-radius: 2em;
   cursor: pointer;
@@ -95,10 +95,10 @@ input:checked ~ .toggle span {
 }
 @media screen and (max-width: 450px) {
   .drawer {
-    width: 72vw;
+    width: 58vw;
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.8);
   }
 }
-.rtl-text{
+.rtl-text {
   direction: rtl;
 }

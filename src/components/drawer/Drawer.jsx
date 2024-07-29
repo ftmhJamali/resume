@@ -56,7 +56,7 @@ const Drawer = ({ isOpen, setLanguage, language }) => {
         </h3>
         <p className=" text-base text-gray-400 ">
           {language === "English" ? (
-            <span>Color Platte (2 click)</span>
+            <span>Color Platte (✌🏻 touch)</span>
           ) : (
             <span className="rtl-text">پالت رنگی </span>
           )}
